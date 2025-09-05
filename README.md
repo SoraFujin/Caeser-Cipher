@@ -1,13 +1,12 @@
 # Caesar Cipher Implementation
-A versatile and efficient implementation of the Caesar Cipher encryption algorithm in C, featuring multiple character set support and flexible encryption modes.
-Features
+A versatile and efficient implementation of the Caesar Cipher encryption algorithm in C, featuring flexible encryption modes.
 
-## Encryption Modes
+# Encryption Modes
 1. STRICT: Maintains original case for alphabets
 2. IGNORE: Converts everything to lowercase
 3. INCLUDE: Handles case as per input
 
-## File Support
+# File Support
 1. Read encryption messages from text files
 2. Handle large files efficiently
 3. Proper memory management
@@ -17,20 +16,18 @@ Features
 1. GCC compiler
 2. Git
 
-# Clone the repository
+## Clone the repository
 ``` bash
 git clone https://github.com/SoraFujin/Caeser-Cipher.git
 cd Caeser-Cipher
 ```
 
-# Manual Compilation
+## Manual Compilation
 ```bash
 gcc -o caeser src/caeser.c -Iinclude -Wall -Wextra -std=c99
 ```
 
-# Usage
-
-## Project Structure
+# Project Structure
 ```text
 Caeser-Cipher/
 ├── include/
@@ -85,6 +82,7 @@ caeser(encrypted, decrypted, 3, STRICT, 1);
 2. Understanding basic cryptography concepts
 3. Academic projects
 4. Learning C programming
+<br>
 ***Do not use for sensitive data encryption.***
 ---
 

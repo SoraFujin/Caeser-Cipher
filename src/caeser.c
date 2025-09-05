@@ -28,7 +28,6 @@ int read_file(const char *file_path)
     return 0;
 }
 
-
 char shift_char(char c, int shift, enum Mode mode, int decrypt) {
     if((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')) {
         int is_upper = (c >= 'A' && c <= 'Z');

@@ -2,21 +2,15 @@
 A versatile and efficient implementation of the Caesar Cipher encryption algorithm in C, featuring multiple character set support and flexible encryption modes.
 Features
 
-## Multiple Character Sets
-	 Alphabets Only: Traditional Caesar cipher (A-Z, a-z)
-	 Alphabets + Digits: Extended to include numbers (0-9)
-	 Printable ASCII: All printable characters (32-126)
-	 Full ASCII: Complete ASCII range (0-127)
-
 ## Encryption Modes
 	STRICT: Maintains original case for alphabets
 	IGNORE: Converts everything to lowercase
 	INCLUDE: Handles case as per input
 
 File Support
-	`Read encryption messages from text files
-	`Handle large files efficiently
-	`Proper memory management
+	`Read encryption messages from text files`<br>
+	`Handle large files efficiently`<br>
+	`Proper memory management`<br>
 
 # Installation
 ## Prerequisites
@@ -24,8 +18,6 @@ File Support
 	GNU Make
 	Git
 
-# Building from Source
-bash
 # Clone the repository
 ``` bash
 git clone https://github.com/SoraFujin/Caeser-Cipher.git
@@ -38,8 +30,8 @@ gcc -o caeser src/caeser.c -Iinclude -Wall -Wextra -std=c99
 ```
 
 # Usage
-Basic Encryption/Decryption
-Project Structure
+
+## Project Structure
 ```text
 Caeser-Cipher/
 ├── include/
@@ -60,15 +52,14 @@ Caeser-Cipher/
 int read_file(const char *file_path);
 
 /* Shift a single character based on parameters */
-char shift_char(char c, int shift, enum Mode mode, int decrypt, enum CharSet charset);
+char shift_char(char c, int shift, enum Mode mode, int decrypt);
 
 /* Process entire input string */
-void caeser(char *input, char *output, int shift, enum Mode mode, int decrypt, enum CharSet charset);
+void caeser(char *input, char *output, int shift, enum Mode mode, int decrypt);
 ```
 ## Enums
 ```c
 enum Mode { STRICT, IGNORE, INCLUDE };
-enum CharSet { ALPHABETS_ONLY, ALPHABETS_AND_DIGITS, FULL_ASCII, PRINTABLE_ASCII };
 ```
 
 # Examples
@@ -76,11 +67,11 @@ enum CharSet { ALPHABETS_ONLY, ALPHABETS_AND_DIGITS, FULL_ASCII, PRINTABLE_ASCII
 ```c
 // Encrypt a string
 char *encrypted = malloc(strlen(input) + 1);
-caeser(input, encrypted, 3, STRICT, 0, ALPHABETS_AND_DIGITS);
+caeser(input, encrypted, 3, STRICT, 0);
 
 // Decrypt a string  
 char *decrypted = malloc(strlen(encrypted) + 1);
-caeser(encrypted, decrypted, 3, STRICT, 1, ALPHABETS_AND_DIGITS);
+caeser(encrypted, decrypted, 3, STRICT, 1);
 ```
 
 # Performance
@@ -89,18 +80,19 @@ caeser(encrypted, decrypted, 3, STRICT, 1, ALPHABETS_AND_DIGITS);
 	Handles large files with stream processing
 	Minimal memory footprint
 
-Security Notes
-
+# Security Notes
 ***Important: The Caesar cipher is a classical encryption method and is not secure for modern cryptographic purposes. This implementation is intended for:***
-	`Educational purposes
-	`Understanding basic cryptography concepts
-	`Academic projects
-	`Learning C programming
+	`Educational purposes`
+	`Understanding basic cryptography concepts`
+	`Academic projects`
+	`Learning C programming`
 ***Do not use for sensitive data encryption.***
+---
 
 # Author
-Ahmad Diab
+**Ahmad Diab**
 Acknowledgments
-	`Inspired by classical cryptography techniques
-	`Built for educational purposes in C programming
-	`Thanks to the open source community for best practices
+	`Inspired by classical cryptography techniques`<br>
+	`Built for educational purposes in C programming`<br>
+	`Thanks to the open source community for best practices`<br>
+

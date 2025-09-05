@@ -3,20 +3,19 @@ A versatile and efficient implementation of the Caesar Cipher encryption algorit
 Features
 
 ## Encryption Modes
-	STRICT: Maintains original case for alphabets
-	IGNORE: Converts everything to lowercase
-	INCLUDE: Handles case as per input
+1. STRICT: Maintains original case for alphabets
+2. IGNORE: Converts everything to lowercase
+3. INCLUDE: Handles case as per input
 
 ## File Support
-	`Read encryption messages from text files`<br>
-	`Handle large files efficiently`<br>
-	`Proper memory management`<br>
+1. Read encryption messages from text files
+2. Handle large files efficiently
+3. Proper memory management
 
 # Installation
 ## Prerequisites
-	GCC compiler
-	GNU Make
-	Git
+1. GCC compiler
+2. Git
 
 # Clone the repository
 ``` bash
@@ -75,25 +74,23 @@ caeser(encrypted, decrypted, 3, STRICT, 1);
 ```
 
 # Performance
-	Efficient memory management with proper allocation/deallocation
-	O(n) time complexity for encryption/decryption
-	Handles large files with stream processing
-	Minimal memory footprint
+- Efficient memory management with proper allocation/deallocation
+- O(n) time complexity for encryption/decryption
+- Handles large files with stream processing
+- Minimal memory footprint
 
 # Security Notes
-
 ***Important: The Caesar cipher is a classical encryption method and is not secure for modern cryptographic purposes. This implementation is intended for:***
-	`Educational purposes`
-	`Understanding basic cryptography concepts`
-	`Academic projects`
-	`Learning C programming`
+1. Educational purposes
+2. Understanding basic cryptography concepts
+3. Academic projects
+4. Learning C programming
 ***Do not use for sensitive data encryption.***
 ---
 
 # Author
 **Ahmad Diab**
 Acknowledgments
-	`Inspired by classical cryptography techniques`<br>
-	`Built for educational purposes in C programming`<br>
-	`Thanks to the open source community for best practices`<br>
+1. Inspired by classical cryptography techniques
+2. Built for educational purposes in C programming
 

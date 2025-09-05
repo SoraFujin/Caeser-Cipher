@@ -2,3 +2,4 @@ bin/
 *.o
 *.out
 scripts/
+src/caeser_cipher_old.c

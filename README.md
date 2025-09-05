@@ -7,7 +7,7 @@ Features
 	IGNORE: Converts everything to lowercase
 	INCLUDE: Handles case as per input
 
-File Support
+## File Support
 	`Read encryption messages from text files`<br>
 	`Handle large files efficiently`<br>
 	`Proper memory management`<br>
@@ -81,6 +81,7 @@ caeser(encrypted, decrypted, 3, STRICT, 1);
 	Minimal memory footprint
 
 # Security Notes
+
 ***Important: The Caesar cipher is a classical encryption method and is not secure for modern cryptographic purposes. This implementation is intended for:***
 	`Educational purposes`
 	`Understanding basic cryptography concepts`
